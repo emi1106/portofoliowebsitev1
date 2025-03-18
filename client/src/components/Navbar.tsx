@@ -22,13 +22,9 @@ const Navbar = () => {
               <a href="#projects" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-blue-400 transition-colors">Projects</a>
               <a href="#achievements" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-blue-400 transition-colors">Achievements</a>
               <a href="#contact" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-blue-400 transition-colors">Contact</a>
-              <ThemeToggle />
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <div className="md:hidden">
-              <ThemeToggle />
-            </div>
             <div className="block md:hidden">
               <button 
                 className="p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none" 
