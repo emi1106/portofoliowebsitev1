@@ -58,7 +58,7 @@ const ContactSection = () => {
         
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-semibold mb-6 dark:text-gray-100">Get in Touch</h3>
+            <h3 className="text-2xl font-semibold mb-6 dark:text-gray-100">🌟 Get in Touch</h3>
             <p className="text-gray-600 dark:text-gray-300 mb-8">Have a project in mind or want to discuss potential opportunities? Reach out through any of the channels below.</p>
             
             <div className="space-y-6">
@@ -89,7 +89,10 @@ const ContactSection = () => {
               </div>
               
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-primary-100 dark:bg-blue-900/30 text-primary-600 dark:text-blue-400 rounded-full mr-4">
+                <div 
+                  className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-primary-100 dark:bg-blue-900/30 text-primary-600 dark:text-blue-400 rounded-full mr-4" 
+                  style={{ animation: `float 4s ease-in-out infinite` }}
+                >
                   <Github className="h-5 w-5" />
                 </div>
                 <div>
@@ -101,7 +104,7 @@ const ContactSection = () => {
           </div>
           
           <div className="bg-gray-50 dark:bg-gray-700 p-8 rounded-xl shadow-sm">
-            <h3 className="text-2xl font-semibold mb-6 dark:text-gray-100">Send a Message</h3>
+            <h3 className="text-2xl font-semibold mb-6 dark:text-gray-100">✉️ Send a Message</h3>
             <form onSubmit={handleSubmit}>
               <div className="space-y-6">
                 <div>
@@ -150,8 +153,9 @@ const ContactSection = () => {
                   type="submit" 
                   className="w-full py-3 px-6 bg-gradient-to-r from-blue-600 to-indigo-700 dark:from-blue-700 dark:to-indigo-800 text-white font-medium rounded-lg hover:opacity-90 transition-opacity shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 dark:focus:ring-blue-500 disabled:opacity-50"
                   disabled={isSubmitting}
+                  style={{ animation: `pulse 2s ease-in-out infinite` }}
                 >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  {isSubmitting ? 'Sending... 📤' : 'Send Message ✉️'}
                 </button>
               </div>
             </form>
