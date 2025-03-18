@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-sm transition-colors">
+    <nav className="sticky top-0 z-50 backdrop-blur-sm shadow-sm transition-colors">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 font-bold text-xl text-primary-700 dark:text-blue-400">
@@ -43,11 +43,11 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-900 shadow-md">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-md">
             <a href="#about" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800">About</a>
             <a href="#skills" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800">Skills</a>
             <a href="#projects" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800">Projects</a>
