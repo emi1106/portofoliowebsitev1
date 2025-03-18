@@ -31,9 +31,9 @@ const ProjectsSection = () => {
     <section id="projects" className="py-20 bg-white dark:bg-gray-800 transition-colors">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100">Featured Projects</h2>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100">🚀 Featured Projects</h2>
           <div className="w-20 h-1 bg-primary-600 dark:bg-blue-500 mx-auto mt-3 mb-6 rounded-full"></div>
-          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">A selection of my recent work, showcasing a range of technologies and design approaches.</p>
+          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">A selection of my recent work, showcasing a range of technologies and design approaches. ✨</p>
         </div>
         
         <div className="max-w-5xl mx-auto relative">
@@ -61,7 +61,7 @@ const ProjectsSection = () => {
                   </div>
                 </div>
                 <div className="p-8">
-                  <h3 className="text-2xl font-bold mb-3 dark:text-gray-100">{project.title}</h3>
+                  <h3 className="text-2xl font-bold mb-3 dark:text-gray-100">✨ {project.title}</h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-5">{project.description}</p>
                   
                   <div className="flex flex-wrap gap-2 mb-5">
@@ -69,6 +69,10 @@ const ProjectsSection = () => {
                       <span 
                         key={tagIndex}
                         className="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 rounded-full text-sm font-medium"
+                        style={{ 
+                          animation: `float ${2 + tagIndex * 0.5}s ease-in-out infinite`,
+                          animationDelay: `${tagIndex * 0.1}s`
+                        }}
                       >
                         {tag}
                       </span>
@@ -79,9 +83,9 @@ const ProjectsSection = () => {
                     href={project.path} 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="inline-flex items-center text-primary-600 dark:text-blue-400 hover:text-primary-800 dark:hover:text-blue-300 transition-colors font-medium"
+                    className="inline-flex items-center text-primary-600 dark:text-blue-400 hover:text-primary-800 dark:hover:text-blue-300 transition-colors font-medium hover:scale-105 transition-transform duration-300"
                   >
-                    <span>View Project</span>
+                    <span>View Project 🔗</span>
                     <ExternalLink className="h-5 w-5 ml-1" />
                   </a>
                 </div>
@@ -129,9 +133,10 @@ const ProjectsSection = () => {
             href="https://github.com/yourusername" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="inline-flex items-center px-6 py-3 border border-primary-600 dark:border-blue-500 text-primary-600 dark:text-blue-400 bg-transparent hover:bg-primary-50 dark:hover:bg-blue-900/20 rounded-lg font-medium transition-colors"
+            className="inline-flex items-center px-6 py-3 border border-primary-600 dark:border-blue-500 text-primary-600 dark:text-blue-400 bg-transparent hover:bg-primary-50 dark:hover:bg-blue-900/20 rounded-lg font-medium transition-colors hover:scale-105 transition-transform duration-300"
+            style={{ animation: `pulse 4s ease-in-out infinite` }}
           >
-            View All Projects
+            View All Projects 🔍
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>

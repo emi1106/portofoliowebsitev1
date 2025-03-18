@@ -51,9 +51,9 @@ const ContactSection = () => {
     <section id="contact" className="py-20 bg-white dark:bg-gray-800 transition-colors">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100">Let's Work Together</h2>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100">📬 Let's Work Together</h2>
           <div className="w-20 h-1 bg-primary-600 dark:bg-blue-500 mx-auto mt-3 mb-6 rounded-full"></div>
-          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">I'm always interested in hearing about new projects and opportunities.</p>
+          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">I'm always interested in hearing about new projects and opportunities. ✨</p>
         </div>
         
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
@@ -63,7 +63,10 @@ const ContactSection = () => {
             
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-primary-100 dark:bg-blue-900/30 text-primary-600 dark:text-blue-400 rounded-full mr-4">
+                <div 
+                  className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-primary-100 dark:bg-blue-900/30 text-primary-600 dark:text-blue-400 rounded-full mr-4"
+                  style={{ animation: `float 3s ease-in-out infinite` }}
+                >
                   <Mail className="h-5 w-5" />
                 </div>
                 <div>
@@ -73,7 +76,10 @@ const ContactSection = () => {
               </div>
               
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-primary-100 dark:bg-blue-900/30 text-primary-600 dark:text-blue-400 rounded-full mr-4">
+                <div 
+                  className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-primary-100 dark:bg-blue-900/30 text-primary-600 dark:text-blue-400 rounded-full mr-4"
+                  style={{ animation: `float 3.5s ease-in-out infinite` }}
+                >
                   <ExternalLink className="h-5 w-5" />
                 </div>
                 <div>
