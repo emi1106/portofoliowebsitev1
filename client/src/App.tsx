@@ -14,9 +14,12 @@ import { BackgroundBeamsWithCollision } from './components/ui/beams';
 function App() {
   return (
     <ThemeProvider>
-      <div className="font-sans text-gray-800 dark:text-gray-200 transition-colors relative">
-        <BackgroundBeamsWithCollision />
-        <Navbar />
+      <div className="font-sans text-gray-800 dark:text-gray-200 transition-colors">
+        <div className="fixed inset-0 z-0">
+          <BackgroundBeamsWithCollision />
+        </div>
+        <div className="relative z-10">
+          <Navbar />
         <HeroSection />
         <LanguageSection />
         <EducationSection />
@@ -25,7 +28,8 @@ function App() {
         <AchievementsSection />
         <ContactSection />
         <Footer />
-        <Toaster />
+          <Toaster />
+        </div>
       </div>
     </ThemeProvider>
   );
