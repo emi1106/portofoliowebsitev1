@@ -7,20 +7,23 @@ import AchievementsSection from "./components/AchievementsSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import { Toaster } from "@/components/ui/toaster";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 function App() {
   return (
-    <div className="font-sans text-gray-800 bg-gray-50">
-      <Navbar />
-      <HeroSection />
-      <LanguageSection />
-      <EducationSection />
-      <ProjectsSection />
-      <AchievementsSection />
-      <ContactSection />
-      <Footer />
-      <Toaster />
-    </div>
+    <ThemeProvider>
+      <div className="font-sans text-gray-800 dark:text-gray-200 bg-gray-50 dark:bg-gray-900 transition-colors">
+        <Navbar />
+        <HeroSection />
+        <LanguageSection />
+        <EducationSection />
+        <ProjectsSection />
+        <AchievementsSection />
+        <ContactSection />
+        <Footer />
+        <Toaster />
+      </div>
+    </ThemeProvider>
   );
 }
 
