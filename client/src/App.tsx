@@ -7,15 +7,17 @@ import AchievementsSection from "./components/AchievementsSection";
 import ExperienceSection from "./components/ExperienceSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
-import StarBackground from "./components/StarBackground";
+//import StarBackground from "./components/StarBackground"; // Removed as per change request
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import BackgroundBeamsWithCollision from "./components/BackgroundBeamsWithCollision"; // Added import
+
 
 function App() {
   return (
     <ThemeProvider>
       <div className="font-sans text-gray-800 dark:text-gray-200 bg-gray-50 dark:bg-gray-900 transition-colors">
-        <StarBackground />
+        <BackgroundBeamsWithCollision className="fixed inset-0 -z-10" /> {/* Replaced StarBackground */}
         <Navbar />
         <HeroSection />
         <LanguageSection />
