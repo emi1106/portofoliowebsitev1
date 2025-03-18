@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <header id="about" className="relative bg-gradient-to-r from-blue-600 to-indigo-700 dark:from-blue-800 dark:to-indigo-900 text-white overflow-hidden">
+    <header id="about" className="relative text-white overflow-hidden">
       <div className="absolute inset-0 bg-grid-white/[0.05] bg-[length:20px_20px]"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
