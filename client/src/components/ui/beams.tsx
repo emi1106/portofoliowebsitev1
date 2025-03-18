@@ -71,7 +71,7 @@ export const BackgroundBeamsWithCollision = ({
     <div
       ref={parentRef}
       className={cn(
-        "fixed inset-0 bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900 -z-50",
+        "fixed inset-0 bg-gradient-to-b from-gray-50/90 to-white/90 dark:from-gray-950/90 dark:to-gray-900/90 -z-10",
         className
       )}
     >
