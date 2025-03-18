@@ -11,7 +11,7 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  // Get initial theme state from localStorage or system preference
+  // Get initial theme state from localStorage or default to dark
   const [theme, setTheme] = useState<Theme>(() => {
     // Check if there's a theme in localStorage
     const savedTheme = localStorage.getItem('theme') as Theme;
@@ -19,12 +19,7 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
       return savedTheme;
     }
     
-    // Check system preference
-    if (typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
-    }
-    
-    return 'light'; // Default to light
+    return 'dark'; // Default to dark
   });
 
   useEffect(() => {

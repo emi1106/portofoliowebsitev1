@@ -6,6 +6,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import AchievementsSection from "./components/AchievementsSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import StarBackground from "./components/StarBackground";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "./contexts/ThemeContext";
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <ThemeProvider>
       <div className="font-sans text-gray-800 dark:text-gray-200 bg-gray-50 dark:bg-gray-900 transition-colors">
+        <StarBackground />
         <Navbar />
         <HeroSection />
         <LanguageSection />
