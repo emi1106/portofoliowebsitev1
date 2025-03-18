@@ -26,12 +26,6 @@ const StarBackground: React.FC = () => {
   const { isDark } = useTheme();
   
   useEffect(() => {
-    // Only show stars in dark mode
-    if (!isDark) {
-      setStars([]);
-      setShootingStars([]);
-      return;
-    }
 
     // Generate random stars - increased density
     const numberOfStars = Math.floor(window.innerWidth / 8); // More stars (was /15)
@@ -74,7 +68,7 @@ const StarBackground: React.FC = () => {
     };
   }, [isDark]);
   
-  if (!isDark || stars.length === 0) return null;
+  if (stars.length === 0) return null;
   
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
