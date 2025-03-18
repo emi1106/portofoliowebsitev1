@@ -4,6 +4,7 @@ import LanguageSection from "./components/LanguageSection";
 import EducationSection from "./components/EducationSection";
 import ProjectsSection from "./components/ProjectsSection";
 import AchievementsSection from "./components/AchievementsSection";
+import ExperienceSection from "./components/ExperienceSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import StarBackground from "./components/StarBackground";
@@ -20,6 +21,7 @@ function App() {
         <LanguageSection />
         <EducationSection />
         <ProjectsSection />
+        <ExperienceSection />
         <AchievementsSection />
         <ContactSection />
         <Footer />
