@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Award, Languages, GraduationCap, ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -6,7 +7,7 @@ interface Project {
   description: string;
   image: string;
   tags: string[];
-  path: string;  // Changed from 'link' to 'path'
+  path: string;
 }
 
 interface Achievement {
@@ -48,28 +49,28 @@ function App() {
       description: "A full-featured online store built with React and Node.js, supporting multiple vendors and secure payments.",
       image: "/images/betoane1.jpg",
       tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      path: "c:\Users\stefe\Desktop\project"
+      path: "c:\\Users\\stefe\\Desktop\\project"
     },
     {
       title: "Restaurant Management System",
       description: "Custom solution for restaurant chain featuring order management, inventory tracking, and analytics dashboard.",
       image: "/images/betoane2.jpg",
       tags: ["React", "Firebase", "Material-UI"],
-      path: "c:\Users\stefe\Desktop\project"
+      path: "c:\\Users\\stefe\\Desktop\\project"
     },
     {
       title: "Real Estate Platform",
       description: "Modern real estate platform with advanced search and filtering capabilities, built with Next.js and PostgreSQL.",
       image: "/images/atelier1.jpg",
       tags: ["Next.js", "PostgreSQL", "TailwindCSS"],
-      path: "c:\Users\stefe\Desktop\project"
+      path: "c:\\Users\\stefe\\Desktop\\project"
     },
     {
       title: "Portfolio Website",
       description: "Responsive personal portfolio showcasing projects and skills with modern design and animations.",
       image: "/images/atelier2.jpg",
       tags: ["React", "TailwindCSS", "Framer Motion"],
-      path: "c:\Users\stefe\Desktop\project"
+      path: "c:\\Users\\stefe\\Desktop\\project"
     }
   ];
 
