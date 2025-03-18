@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import StarBackground from "./components/StarBackground";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { BackgroundBeamsWithCollision } from './components/ui/beams';
 
 function App() {
   return (
@@ -17,7 +18,10 @@ function App() {
       <div className="font-sans text-gray-800 dark:text-gray-200 bg-gray-50 dark:bg-gray-900 transition-colors">
         <StarBackground />
         <Navbar />
+        {/* Hero Section */}
+        <BackgroundBeamsWithCollision>
         <HeroSection />
+        </BackgroundBeamsWithCollision>
         <LanguageSection />
         <EducationSection />
         <ProjectsSection />
