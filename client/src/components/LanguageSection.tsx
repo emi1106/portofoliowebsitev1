@@ -4,11 +4,9 @@ import { Languages } from 'lucide-react';
 
 const LanguageSection = () => {
   const languages = [
-    { name: 'JavaScript', level: 90 },
-    { name: 'Python', level: 85 },
-    { name: 'TypeScript', level: 80 },
-    { name: 'Java', level: 75 },
-    { name: 'C++', level: 70 }
+    { name: 'Romanian', level: 100, description: 'Native Speaker' },
+    { name: 'German', level: 85, description: 'C1 Level', certification: 'DSD Diploma' },
+    { name: 'English', level: 95, description: 'C2 Level', certification: 'Cambridge Diploma' }
   ];
 
   const [hoveredLanguage, setHoveredLanguage] = useState<string | null>(null);
@@ -30,6 +28,7 @@ const LanguageSection = () => {
             >
               <div className="flex justify-between mb-2">
                 <span className="font-medium">{lang.name}</span>
+                <span className="text-sm text-gray-600">{lang.description}</span>
               </div>
               <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
                 <div
@@ -39,6 +38,9 @@ const LanguageSection = () => {
                   }}
                 />
               </div>
+              {lang.certification && (
+                <div className="mt-1 text-sm text-blue-600">{lang.certification}</div>
+              )}
             </div>
           ))}
         </div>
