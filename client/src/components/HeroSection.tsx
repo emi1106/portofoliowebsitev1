@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 
-            className="text-4xl sm:text-5xl font-bold mb-4 tracking-tight"
+            className="text-4xl sm:text-5xl font-bold mb-4 tracking-tight bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent"
             style={{ animation: `fadeIn 1.5s ease-in-out` }}
           >
             👨‍💻 Full Stack Developer
