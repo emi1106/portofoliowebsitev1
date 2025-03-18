@@ -1,9 +1,23 @@
+import { useEffect, useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 
 const ThemeToggle = () => {
-  const { theme, toggleTheme } = useTheme();
-
+  // Use optional chaining to prevent errors if ThemeContext isn't available yet
+  const theme = useTheme()?.theme;
+  const toggleTheme = useTheme()?.toggleTheme;
+  
+  // Local state as fallback
+  const [mounted, setMounted] = useState(false);
+  
+  // After component mounts, set mounted to true
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  
+  // Don't render anything until after client-side hydration
+  if (!mounted) return null;
+  
   return (
     <button
       onClick={toggleTheme}
