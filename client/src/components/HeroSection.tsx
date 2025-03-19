@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail } from 'lucide-react';
 
-const HeroSection = () => {
+const HeroSection = ({ setIsModalOpen }) => {
   return (
     <header id="about" className="relative text-white overflow-hidden">
       <div className="absolute inset-0 bg-grid-white/[0.05] bg-[length:20px_20px]"></div>
@@ -63,12 +63,12 @@ const HeroSection = () => {
               🚀 View My Work
             </a>
             <a 
-              href="#contact" 
-              className="px-6 py-3 bg-indigo-800/40 dark:bg-indigo-900/40 text-white font-medium rounded-lg hover:bg-indigo-800/60 dark:hover:bg-indigo-900/60 border border-indigo-500 dark:border-indigo-600 transition-colors"
+              onClick={() => setIsModalOpen(true)}
+              className="px-6 py-3 bg-indigo-800/40 dark:bg-indigo-900/40 text-white font-medium rounded-lg hover:bg-indigo-800/60 dark:hover:bg-indigo-900/60 border border-indigo-500 dark:border-indigo-600 transition-colors cursor-pointer"
               style={{ animation: `pulse 3.5s ease-in-out infinite` }}
             >
               ✉️ Get In Touch
-            </a>
+            </button>
           </div>
         </div>
       </div>

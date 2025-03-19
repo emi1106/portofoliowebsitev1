@@ -10,8 +10,13 @@ import Footer from "./components/Footer";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { BackgroundBeamsWithCollision } from './components/ui/beams';
+import { useState } from 'react';
+import ContactModal from './components/ContactModal'; // Import the modal component
+
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <ThemeProvider>
       <div className="font-sans text-gray-800 dark:text-gray-200 transition-colors">
@@ -20,15 +25,16 @@ function App() {
         </div>
         <div className="relative z-10">
           <Navbar />
-        <HeroSection />
-        <LanguageSection />
-        <EducationSection />
-        <ProjectsSection />
-        <ExperienceSection />
-        <AchievementsSection />
-        <ContactSection />
-        <Footer />
+          <HeroSection setIsModalOpen={setIsModalOpen} />
+          <LanguageSection />
+          <EducationSection />
+          <ProjectsSection />
+          <ExperienceSection />
+          <AchievementsSection />
+          <ContactSection setIsModalOpen={setIsModalOpen} />
+          <Footer />
           <Toaster />
+          {isModalOpen && <ContactModal setIsModalOpen={setIsModalOpen} />} {/*Render the modal if isModalOpen is true*/}
         </div>
       </div>
     </ThemeProvider>
