@@ -10,7 +10,7 @@ const HeroSection = () => {
             className="text-4xl sm:text-5xl font-bold mb-4 tracking-tight bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent"
             style={{ animation: `fadeIn 1.5s ease-in-out` }}
           >
-            👨‍💻 Full Stack Developer
+            Full Stack Developer
           </h1>
           <p 
             className="text-lg sm:text-xl opacity-90 mb-8 max-w-2xl mx-auto leading-relaxed"
