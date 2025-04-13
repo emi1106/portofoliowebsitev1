@@ -62,7 +62,7 @@ const HeroSection = ({ setIsModalOpen }) => {
             >
               🚀 View My Work
             </a>
-            <a 
+            <button 
               onClick={() => setIsModalOpen(true)}
               className="px-6 py-3 bg-indigo-800/40 dark:bg-indigo-900/40 text-white font-medium rounded-lg hover:bg-indigo-800/60 dark:hover:bg-indigo-900/60 border border-indigo-500 dark:border-indigo-600 transition-colors cursor-pointer"
               style={{ animation: `pulse 3.5s ease-in-out infinite` }}
