@@ -18,10 +18,8 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div className="flex items-center space-x-6">
               <a href="#about" className="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-purple-500 transition-colors">About</a>
-              <a href="#skills" className="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-purple-500 transition-colors">Skills</a>
               <a href="#projects" className="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-purple-500 transition-colors">Projects</a>
               <a href="#achievements" className="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-purple-500 transition-colors">Achievements</a>
-              <a href="#contact" className="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-purple-500 transition-colors">Contact</a>
             </div>
           </div>
           <div className="flex items-center space-x-2">
@@ -45,10 +43,8 @@ const Navbar = () => {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-md">
             <a href="#about" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-purple-500 hover:bg-gray-50 dark:hover:bg-gray-800">About</a>
-            <a href="#skills" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-purple-500 hover:bg-gray-50 dark:hover:bg-gray-800">Skills</a>
             <a href="#projects" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-purple-500 hover:bg-gray-50 dark:hover:bg-gray-800">Projects</a>
             <a href="#achievements" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-purple-500 hover:bg-gray-50 dark:hover:bg-gray-800">Achievements</a>
-            <a href="#contact" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-purple-500 hover:bg-gray-50 dark:hover:bg-gray-800">Contact</a>
           </div>
         </div>
       )}
