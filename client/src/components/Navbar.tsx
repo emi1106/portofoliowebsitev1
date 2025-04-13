@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-sm shadow-sm transition-colors">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 font-bold text-xl text-primary-700 dark:text-blue-400">
             <span>DEV</span><span className="text-gray-500 dark:text-gray-400">PORTFOLIO</span>
