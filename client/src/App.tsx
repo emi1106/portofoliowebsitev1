@@ -29,7 +29,6 @@ function App() {
           <LanguageSection />
           <EducationSection />
           <ProjectsSection />
-          <ExperienceSection />
           <AchievementsSection />
           <ContactSection setIsModalOpen={setIsModalOpen} />
           <Footer />
