@@ -20,7 +20,7 @@ const Navbar = () => {
         {/* Keep mx-auto here if you want the *content* (like logo on left, menu on right) within a max width, otherwise remove it */}
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <img src="/se-logo.svg" alt="SE Logo" className="h-8 w-8 text-white dark:text-white" />
+            <img src="/se-logo.svg" alt="SE Logo" className="h-8 w-8 text-gray-800 dark:text-white" />
           </div>
           {/* Optional: Add ThemeToggle here if you want it next to the menu */}
           {/* <div className="mr-4"> <ThemeToggle /> </div> */}
