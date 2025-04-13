@@ -11,7 +11,8 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-4">
-        <div className="flex justify-end items-center h-16">
+        <div className="flex justify-between items-center h-16">
+          <img src="/logo.png" alt="SE Logo" className="h-8 w-8" />
           <div className="relative">
             <button 
               className="p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none" 
