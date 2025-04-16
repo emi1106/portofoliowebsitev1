@@ -1,6 +1,12 @@
+import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa'; // Asigură-te că ai instalat react-icons
 
-const HeroSection = ({ setIsModalOpen }) => {
+// Citește variabilele de mediu (specific Vite)
+const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER;
+const contactEmail = import.meta.env.VITE_CONTACT_EMAIL;
+
+const HeroSection = () => {
   return (
     <header id="about" className="relative text-white overflow-hidden">
       <div className="absolute inset-0 bg-grid-white/[0.05] bg-[length:20px_20px]"></div>
@@ -23,7 +29,7 @@ const HeroSection = ({ setIsModalOpen }) => {
             style={{ animation: `fadeIn 2.5s ease-in-out` }}
           >
             <a 
-              href="https://github.com/" 
+              href="https://github.com/emi1106" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors duration-300" 
@@ -42,33 +48,49 @@ const HeroSection = ({ setIsModalOpen }) => {
             >
               <Linkedin className="h-6 w-6" />
             </a>
-            <a 
-              href="mailto:contact@example.com" 
-              className="p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors duration-300" 
+            {/* Poți păstra sau elimina iconița Mail de aici dacă ai butonul de mai jos */}
+            {/* <a
+              href={`mailto:${contactEmail}`} // Folosește variabila de mediu
+              className="p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors duration-300"
               aria-label="Send email"
               style={{ animation: `float 4s ease-in-out infinite` }}
             >
               <Mail className="h-6 w-6" />
-            </a>
+            </a> */}
           </div>
           <div 
-            className="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4"
+            className="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-4 mt-8" // Added mt-8 for spacing, adjust as needed
             style={{ animation: `fadeIn 3s ease-in-out` }}
           >
             <a 
               href="#projects" 
-              className="px-6 py-3 bg-white dark:bg-gray-800 text-indigo-700 dark:text-blue-400 font-medium rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors shadow-md"
+              className="px-6 py-3 bg-white dark:bg-gray-800 text-indigo-700 dark:text-blue-400 font-medium rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors shadow-md inline-flex items-center justify-center" // Added inline-flex and justify-center
               style={{ animation: `pulse 3s ease-in-out infinite` }}
             >
               🚀 View My Work
             </a>
-            <button 
-              onClick={() => setIsModalOpen(true)}
-              className="px-6 py-3 bg-indigo-800/40 dark:bg-indigo-900/40 text-white font-medium rounded-lg hover:bg-indigo-800/60 dark:hover:bg-indigo-900/60 border border-indigo-500 dark:border-indigo-600 transition-colors cursor-pointer"
-              style={{ animation: `pulse 3.5s ease-in-out infinite` }}
-            >
-              ✉️ Get In Touch
-            </button>
+            {/* Buton WhatsApp - Re-adăugat */}
+            {whatsappNumber && (
+              <a
+                href={`https://wa.me/${whatsappNumber}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-green-500/80 dark:bg-green-600/80 text-white font-medium rounded-lg hover:bg-green-500/95 dark:hover:bg-green-600/95 border border-green-600 dark:border-green-700 transition-colors cursor-pointer inline-flex items-center justify-center" // Added inline-flex and justify-center
+                style={{ animation: `pulse 3.5s ease-in-out infinite` }}
+              >
+                <FaWhatsapp className="mr-2 h-5 w-5" /> WhatsApp
+              </a>
+            )}
+            {/* Buton Mail - Re-adăugat */}
+            {contactEmail && (
+              <a
+                href={`mailto:${contactEmail}`}
+                className="px-6 py-3 bg-blue-500/80 dark:bg-blue-600/80 text-white font-medium rounded-lg hover:bg-blue-500/95 dark:hover:bg-blue-600/95 border border-blue-600 dark:border-blue-700 transition-colors cursor-pointer inline-flex items-center justify-center" // Added inline-flex and justify-center
+                style={{ animation: `pulse 4s ease-in-out infinite` }}
+              >
+                <Mail className="mr-2 h-5 w-5" /> Email Me
+              </a>
+            )}
           </div>
         </div>
       </div>

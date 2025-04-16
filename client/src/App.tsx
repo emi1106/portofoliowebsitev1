@@ -4,18 +4,13 @@ import LanguageSection from "./components/LanguageSection";
 import EducationSection from "./components/EducationSection";
 import ProjectsSection from "./components/ProjectsSection";
 import AchievementsSection from "./components/AchievementsSection";
-import ExperienceSection from "./components/ExperienceSection";
-import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { BackgroundBeamsWithCollision } from './components/ui/beams';
-import { useState } from 'react';
-import ContactModal from './components/ContactModal'; // Import the modal component
 
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <ThemeProvider>
@@ -25,15 +20,13 @@ function App() {
         </div>
         <div className="relative z-10">
           <Navbar />
-          <HeroSection setIsModalOpen={setIsModalOpen} />
+          <HeroSection />
           <LanguageSection />
           <EducationSection />
           <ProjectsSection />
           <AchievementsSection />
-          <ContactSection setIsModalOpen={setIsModalOpen} />
           <Footer />
           <Toaster />
-          {isModalOpen && <ContactModal setIsModalOpen={setIsModalOpen} />} {/*Render the modal if isModalOpen is true*/}
         </div>
       </div>
     </ThemeProvider>

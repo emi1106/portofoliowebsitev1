@@ -127,9 +127,6 @@ function App() {
               <a href="#" className="p-2 hover:text-blue-200 transition-colors">
                 <Linkedin size={24} />
               </a>
-              <a href="#" className="p-2 hover:text-blue-200 transition-colors">
-                <Mail size={24} />
-              </a>
             </div>
           </div>
         </div>
@@ -255,23 +252,6 @@ function App() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-8">Let's Work Together</h2>
-          <p className="text-xl text-gray-600 mb-8">
-            I'm always interested in hearing about new projects and opportunities.
-          </p>
-          <a 
-            href="mailto:your.email@example.com"
-            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-          >
-            <Mail className="mr-2" />
-            Get in Touch
-          </a>
         </div>
       </section>
 
